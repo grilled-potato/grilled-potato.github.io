@@ -1,7 +1,26 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-author_profile: true
+title: "Hey, we're just potatoes"
+layout: splash
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/pexels-image-1.jpg
+  actions:
+    - label: "Study Notes"
+      url: "/notes/"
+excerpt: "Trying to self-study AI/ML while documenting our progress"
+intro: 
+  - excerpt: 'Grilled Potato is what happens when a couple of Physics students gather to wonder if there is life after Physics... and whether AI/ML is the answer. We believe that learning is not complete without a successful attempt to apply what is learnt. (And we are not quite there yet.)'
+potato_bot:
+  - image_path: /assets/images/pexels-image-2.jpg
+    alt: "potato bot image"
+    title: "Potato Bot"
+    excerpt: 'Discord bot with modest dreams. Written in Python and in need of actual features.'
+    url: "/bot/"
+    btn_label: "Documentation"
+    btn_class: "btn--primary"
 ---
+
+{% include feature_row id="intro" type="center" %}
+
+{% include feature_row id="potato_bot" type="left" %}
